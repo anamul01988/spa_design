@@ -1,0 +1,52 @@
+// [
+//   {
+//     "id": 1,
+//     "p_name": "Basic",
+//     "duration": "Each User Per Month",
+//     "yearly_dollar_price": "$ 1.00",
+//     "yearly_taka_price": "৳ 90.00",
+//     "yearly_aed_price": "د.إ 4.00",
+//     "monthly_dollar_price": "$ 2.00",
+//     "monthly_taka_price": "৳ 180.00",
+//     "monthly_aed_price": "د.إ 8.00",
+//     "cardMargin":"30px 20px 0px",
+//     "contentTitle":{
+//       "t1": "Notice Board",
+//       "t2": " Announcements",
+//       "t3": "Company djksdhfkejrfejr"
+//     }
+//   },
+//   {
+//     "id": 2,
+//     "p_name": "StartUp",
+//     "duration": "Each User Per Month",
+//     "yearly_dollar_price": "$ 3.00",
+//     "yearly_taka_price": "৳ 250.00",
+//     "yearly_aed_price": "د.إ 10.00",
+//     "monthly_dollar_price": "$ 6.00",
+//     "monthly_taka_price": "৳ 500.00",
+//     "monthly_aed_price": "د.إ 15.00",
+//     "bg": "black",
+//     "headerColor": "#ffff",
+//     "pricingUnitColor": "#d3cd11f7",
+//     "dynamicPriceColor": "#6dcb3d",
+//     "cardContentColor": "#fff",
+//     "contentTitle": {
+//       "t1": "Notice Board for Company Announcements",
+//       "t2": " Announcements",
+//       "t3": "Nouncements"
+//     }
+//   },
+//   {
+//     "id": 3,
+//     "p_name": "Enterprise",
+//     "p_title": "Contact Us For Quotation",
+//     "cardMargin": "30px 20px 0px",
+//     "contentTitle": {
+//       "t1": "Notice Board for Company Announcements",
+//       "t2": "Notice Board for Company Announcements"
+//     }
+//   }
+
+ 
+// ]

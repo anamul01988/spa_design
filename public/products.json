@@ -1,0 +1,33 @@
+// [
+//   {
+//     "id": 1,
+//     "type": "Basic",
+//     "price": "Free",
+//     "supplier_number": "2 Stories",
+//     "quantity": "80",
+//     "short_description": "Night vision Camera has launched recently. It has appeared with best perfomance.",
+//     "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg",
+//     "sold": "13"
+//   },
+
+//   {
+//     "id": 2,
+//     "type": "Standard",
+//     "price": "$25/mo",
+//     "supplier_number": "Unlimited Stories",
+//     "quantity": "30",
+//     "short_description": "China recently launched this phone . That has some unique feature with perfomence.",
+//     "img": "https://transvelo.github.io/electro-html/2.0/assets/img/212X200/img4.jpg",
+//     "sold": "4"
+//   },
+//   {
+//     "id": "3",
+//     "type": "Premium",
+//     "price": "$50/mo",
+//     "supplier_number": "Unlimited Stories",
+//     "quantity": "50",
+//     "short_description": "Ultimate luxurious electronic product that is developer by walton. It has upgraded sound feature.",
+//     "img": "https://transvelo.github.io/electro-html/2.0/assets/img/212X200/img1.jpg",
+//     "sold": "20"
+//   }
+// ]
