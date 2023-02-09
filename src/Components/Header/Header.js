@@ -7,16 +7,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Button from "@mui/material/Button";
 
 import { useNavigate } from "react-router-dom";
-import {
-  useMediaQuery,
-} from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
-import {
-  Tab,
-  Tabs,
-} from "@mui/material";
+import { Tab, Tabs } from "@mui/material";
 import DrawerComp from "./DrawerComp";
 import { Link } from "react-router-dom";
+import { Typography } from '@mui/material';
 import Logo from "../../assets/logo/ghorami_tracker_icon.png";
 // import logoIcon from "./assets/call-common.png";
 // import useAuth from "../../Hooks/useAuth";
@@ -59,11 +55,11 @@ const Header = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   // console.log(isMatch);
   const routes = [
-    "/features",
-    "/solutions",
-    "/pricing",
-    "/book_a_demo",
-    // "/contact",
+    "/Home",
+    "/About Us",
+    "/What We Do",
+    "/Media",
+    "/Contact",
   ];
   return (
     <Box>
@@ -71,7 +67,7 @@ const Header = () => {
       <Box>
         <AppBar
           position="static"
-          sx={{ backgroundColor: "#fff", paddingX: "150px" }}
+          sx={{ backgroundColor: "#EFF7F2", paddingX: "50px",boxShadow:"none" }}
         >
           <Toolbar>
             <Box sx={{ display: "flex", alignItems: "right" }}>
@@ -94,19 +90,16 @@ const Header = () => {
                 onClick={() => {
                   navigate("/");
                 }}
-                className="headerLogoArea"
+                // className="headerLogoArea"
               >
-                <img
-                  className="headerLogo"
-                  width="512"
-                  height="70"
-                  src={Logo}
-                  alt="logo"
-                />
+                <Typography sx={{color: "#000", fontSize:"22px",fontWeight:"bold"}} variant="h1" component="h2">
+                   {`{`}Finsweet
+                </Typography>
+              
               </Box>
             </Box>
             <Box
-              sx={{ flexGrow: { lg: "1", md: "0", sm: "0", xs: "0" } }}
+              sx={{ flexGrow: { lg: "1", md: "1", sm: "1", xs: "1" } }}
             ></Box>
             <Toolbar>
               {isMatch ? (
@@ -116,17 +109,17 @@ const Header = () => {
               ) : (
                 <>
                   <Tabs
-                    sx={{ marginLeft: "auto", color: "#000" }}
+                    sx={{ marginLeft: "auto", color: "#525560" }}
                     // to={routes[0]}
                     className="list-navArea"
                     indicatorColor="secondary"
-                    textColor="inherit"
+                    // textColor="inherit"
                     value={value}
                     onChange={(e, value) => setValue(value)}
                   >
                     <Tab
-                      className="list-nav"
-                      label="Features"
+                      className="list-nav list-nav-active"
+                      label="Home"
                       // label="Home"
                       value={routes[0]}
                       component={Link}
@@ -135,7 +128,7 @@ const Header = () => {
 
                     <Tab
                       className="list-nav"
-                      label="Solutions"
+                      label="About us"
                       // label="Profile"
                       value={routes[1]}
                       component={Link}
@@ -144,60 +137,54 @@ const Header = () => {
                     <Tab
                       className="list-nav"
                       // label="Product List"
-                      label="Pricing"
+                      label="What We Do"
                       value={routes[2]}
                       component={Link}
                       to={routes[2]}
                     />
                     <Tab
                       className="list-nav"
-                      label="Book a Demo"
+                      label="Media"
                       // label="Organogram"
                       value={routes[3]}
                       component={Link}
                       to={routes[3]}
                     />
-                    {/* <Tab
+                    <Tab
                       className="list-nav"
-                      label="contact"
-                      value={routes[3]}
+                      label="Contact"
+                      // label="Organogram"
+                      value={routes[4]}
                       component={Link}
-                      to={routes[3]}
-                    /> */}
+                      to={routes[4]}
+                    />
                   </Tabs>
                 </>
               )}
             </Toolbar>
-           
+
             {/* <AppBar position="static" sx={{ background: "#063970" }}>
           
             </AppBar> */}
 
-    
-         
             {/*  ====== nicer gula delete hobe nah so carefull =========== */}
-           
 
             <Button
               variant="contained"
-              color="primary"
-              size="large"
+              // color="primary"
+              size="small"
               sx={{
-                fontSize: "0.6rem",
-                marginLeft: "15px",
-              }}
-              onClick={() => {
-                let newWindow = window.open(
-                  "https://ghorami.com/ghoramidesk/download/download.php?val=ghorami_desk_1.2.0.zip"
-                );
-
-                setTimeout(function () {
-                  newWindow.document.title = "G-desk software";
-                }, 100);
-                // navigate("/download");
+                fontSize: "16px",
+                fontWeight: "500",
+                // marginLeft: "15px",
+                textTransform:"capitalize",
+                backgroundColor: "#000",
+                color: "#fff",
+                // width:"51px",
+                // height:"19px"
               }}
             >
-              Download
+              Donate
             </Button>
 
             <Box sx={{ display: { xs: "flex", md: "none" } }}></Box>

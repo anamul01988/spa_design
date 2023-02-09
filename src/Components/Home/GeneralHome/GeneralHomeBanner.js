@@ -1,17 +1,12 @@
 import React from "react";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Divider } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import donate from "./asset/Image.png";
 const sectionStyle = {
   height: "auto",
-  backgroundImage:
-    "url('https://ghorami.com/ghoramidesk/banner_all/home_banner.png') ",
-
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
+  background: "#EFF7F2",
 };
 
 function GeneralHomeBanner() {
@@ -19,40 +14,41 @@ function GeneralHomeBanner() {
     <Box
       // position="static"
       sx={{
-        paddingY: "100px",
+        paddingY: "70px",
         paddingX: { lg: "80px", md: "50px", sm: "30px", xs: "20px" },
         overflow: "hidden",
       }}
       style={sectionStyle}
     >
       <Grid container spacing={2}>
-        <Grid item xs={12} md={12} lg={7}>
-          <Typography
+        <Grid item xs={12} md={12} lg={8}>
+            <Box sx={{position:"relative" ,display:"flex"}}>
+              <Box>
+                <Divider color="red" style={{ background: 'black' }}  sx={{opacity:"1",marginTop:"10px", marginRight:"12px", height: 2, width:"40px", }} />
+              </Box>
+              <Box>   <Typography
             variant="subtitle2"
             component="p"
             sx={{
               //   display: { xs: "none" },
-              color: "#063970",
+              color: "#1D2130",
               //   width: "250px",
               fontWeight: "bold",
-              // fontSize: "1.5rem",
-
-              textTransform: "capitalize",
+              fontSize: "16px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
               // cursor: "pointer",
             }}
           >
-            Welcome to Ghorami
+            Donate
           </Typography>
           <Typography
             variant="h3"
             component="h2"
             sx={{
-              //   display: { xs: "none" },
-              color: "#000",
-              //   width: "250px",
+              color: "#1D2130",
               fontWeight: "bold",
-              // fontSize: "1.5rem",
-              // lineHeight:"80px",
+              fontSize: "56px",
               marginTop: "28px",
               marginBottom: "24px",
               letterSpacing: "1px",
@@ -60,7 +56,7 @@ function GeneralHomeBanner() {
               // cursor: "pointer",
             }}
           >
-            Easiest Tool to Manage People
+            Making a donation For Nature
           </Typography>
           <Typography
             variant="h6"
@@ -69,71 +65,41 @@ function GeneralHomeBanner() {
               //   display: { xs: "none" },
               color: "#777",
               //   width: "250px",
-              fontWeight: "bold",
-              // fontSize: "1.5rem",
+              // fontWeight: "bold",
+              fontSize: "16px",
               // cursor: "pointer",
             }}
           >
-            Manage tasks, files & communication in the simplest way & trusted
-            app to make days beautifull. Ghorami provides professional siplest
-            work of Android , ios, web , Graphics including backend server.
+            When you donate, you’re supporting effective solutions to big
+            environmental challenges—an investment in the future of our planet.
           </Typography>
-          <Box
-            sx={{ "& button": { m: 1 }, display: "flex", marginTop: "28px" }}
-          >
-            <div>
-              <Link to="/pricing" style={{ textDecoration: "none" }}>
-                {" "}
-                <Button
-                  style={{
-                    backgroundColor: "#063970",
-                    marginTop: "17px",
-                    //   padding: "15px",
-                    fontWeight: "bold",
-                    // textTransform: "upp",
-                    letterSpacing: "1px",
-                  }}
-                  // sx={{ backgroundColor: "#063970" }}
-                  variant="contained"
-                  size="large"
-                >
-                  Let's Get Started
-                </Button>
-              </Link>
-            </div>
-            <div>
-              <Link to="/features" style={{textDecoration:"none"}}>
-                {" "}
-                <Button
-                  style={{
-                    // padding: "15px",
-                    fontWeight: "bold",
-                    // textTransform: "capitalize",
-                    letterSpacing: "1px",
-                  }}
-                  variant="outlined"
-                  size="large"
-                >
-                  Learn More
-                </Button>
-              </Link>
-            </div>
-          </Box>
+          <Box sx={{ "& button": { m: 0 }, marginTop: "28px" }}>
+            <Button
+              style={{
+                backgroundColor: "#70C174",
+                padding: "16px 32px",
+                fontSize: "16px",
+                fontWeight: "500",
+                textTransform: "capitalize",
+              }}
+              variant="contained"
+              // size="large"
+            >
+              Donate Now
+            </Button>
+          </Box></Box>
+            </Box>
         </Grid>
-        <Grid item xs={12} md={12} lg={5}>
+        <Grid item xs={12} md={12} lg={4}>
           <Box sx={{ textAlign: "center" }}>
             <Box
               component="img"
               sx={{
                 height: "100%",
                 width: "100%",
-                //   marginTop: "67px",
-                // maxHeight: { xs: "300px", md: "300px" },
-                // maxWidth: { xs: "456px", md: "400px" },
               }}
               alt="The house from the offer."
-              src="https://ghorami.com/ghoramidesk/banner_all/home_pic.png"
-              // src="   https://ncmaz.chisnghiax.com/wp-content/uploads/2021/10/SVG-subcribe2.webp"
+              src={donate}
             />
           </Box>
         </Grid>
