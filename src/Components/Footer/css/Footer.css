@@ -34,34 +34,70 @@ img.all-photos-img {
   visibility: visible;
   font-size: 40px;
   transition: 0.5s;
-  /* position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 50%;
-    left: 50%; */
 }
-/* ==== */
-/* img.all-photos-img {
+/*  */
+.newsletter-form {
+  /* background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%); */
   position: relative;
+  height: 50px;
+  z-index: 2;
+  margin-top: 30px;
 }
-img.all-photos-img::before {
+.newsletter-form:after {
   position: absolute;
-  content: "\f03e";
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
-  left: 0;
-  top: 0;
-  font-size: 60px;
-  color: #fff;
-  text-align: center;
-  opacity: 1;
-  visibility: hidden;
-  transition: 0.5s;
+  content: "";
+  left: -2px;
+  right: -2px;
+  top: -2px;
+  bottom: -2px;
+  /* background: -webkit-linear-gradient(-30deg, #91039f 0%, #91039f 100%); */
+  background: -webkit-linear-gradient(-30deg, #d3d0d3 0%, #91039f 100%);
+  z-index: -1;
 }
-img.all-photos-img:hover:before {
-  background: rgba(0, 0, 0, 0.8);
-  visibility: visible;
-  font-size: 40px;
-  transition: 0.5s;
+.newsletter-form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 25px;
+  /* background: #3f1667; */
+  background: #0e0517;
+  color: #fff;
+  padding-right: 200px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.newsletter-form input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.newsletter-form input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.newsletter-form input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.newsletter-form input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.newsletter-form button {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  width: 100px;
+  /* background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%); */
+  background: -webkit-linear-gradient(-30deg, #ffff 0%, #f0f1f3 100%);
+  outline: none;
+  border: none;
+  /* color: #fff; */
+  color: #1D2130;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px ;
+}
+/* .newsletter-form button:hover {
+  background: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%);
 } */
