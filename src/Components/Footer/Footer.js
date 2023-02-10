@@ -184,7 +184,7 @@ const Footer = () => {
             <div>
               <Typography
                 sx={{
-                  fontSize: "40px",
+                  fontSize: "37px",
                   fontWeight: "bold",
                   lineHeight: "47px",
                 }}

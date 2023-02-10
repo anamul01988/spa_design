@@ -180,7 +180,7 @@ const Header = () => {
                 textTransform:"capitalize",
                 backgroundColor: "#000",
                 color: "#fff",
-                padding:"12px 32px",
+                padding:"5px 32px",
                 // width:"51px",
                 // height:"19px"
               }}
