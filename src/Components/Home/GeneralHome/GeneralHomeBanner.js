@@ -41,14 +41,11 @@ function GeneralHomeBanner() {
                 variant="subtitle2"
                 component="p"
                 sx={{
-                  //   display: { xs: "none" },
                   color: "#1D2130",
-                  //   width: "250px",
                   fontWeight: "bold",
                   fontSize: "16px",
                   letterSpacing: "2px",
                   textTransform: "uppercase",
-                  // cursor: "pointer",
                 }}
               >
                 Donate
@@ -64,7 +61,6 @@ function GeneralHomeBanner() {
                   marginBottom: "24px",
                   letterSpacing: "1px",
                   textTransform: "capitalize",
-                  // cursor: "pointer",
                 }}
               >
                 Making a donation For Nature
@@ -73,12 +69,8 @@ function GeneralHomeBanner() {
                 variant="h6"
                 component="h5"
                 sx={{
-                  //   display: { xs: "none" },
                   color: "#777",
-                  //   width: "250px",
-                  // fontWeight: "bold",
                   fontSize: "16px",
-                  // cursor: "pointer",
                 }}
               >
                 When you donate, you’re supporting effective solutions to big

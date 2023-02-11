@@ -6,8 +6,6 @@ import "./css/Environment.css";
 const Environment = ({ image }) => {
   return (
     <Box
-      // position="static"
-
       sx={{
         marginBottom: "100px",
         marginX: { lg: "80px", md: "50px", sm: "30px", xs: "20px" },
@@ -20,7 +18,6 @@ const Environment = ({ image }) => {
         position: "relative",
         zIndex: "100",
       }}
-      //   style={sectionStyle}
     >
       <Box className="environmentArea" component="div"></Box>
       <Box>
@@ -40,7 +37,6 @@ const Environment = ({ image }) => {
               letterSpacing: "1px",
               textTransform: "inherit",
               lineHeight: "57px",
-              // cursor: "pointer",
             }}
           >
             You can contribute to make the environment greener!
@@ -55,7 +51,6 @@ const Environment = ({ image }) => {
                 textTransform: "capitalize",
               }}
               variant="contained"
-              // size="large"
             >
               Join as a volunteer
             </Button>
@@ -70,7 +65,6 @@ const Environment = ({ image }) => {
                 marginLeft:"20px"
               }}
               variant="contained"
-              // size="large"
             >
               Donate
             </Button>

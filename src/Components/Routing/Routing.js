@@ -39,8 +39,6 @@ const Routing = () => {
         sx={[
           {
             width: "100%",
-            // height: window.innerHeight >= 500 && "calc(100vh - 54px)",
-            // : "calc(100vh - 50px)",
           },
         ]}
       >

@@ -12,10 +12,9 @@ import { useMediaQuery } from "@mui/material";
 import { Tab, Tabs } from "@mui/material";
 import DrawerComp from "./DrawerComp";
 import { Link } from "react-router-dom";
-import { Typography } from '@mui/material';
+import { Typography } from "@mui/material";
 import Logo from "../../assets/logo/ghorami_tracker_icon.png";
-// import logoIcon from "./assets/call-common.png";
-// import useAuth from "../../Hooks/useAuth";
+
 import "./Header.css";
 const drawerWidth = 240;
 
@@ -39,48 +38,40 @@ const AppBar = styled(MuiAppBar, {
 
 const Header = () => {
   const theme = useTheme();
-  // const current = new Date();
-  // const date = `${current.getDate()}/${
-  //   current.getMonth() + 1
-  // }/${current.getFullYear()}`;
-
   const navigate = useNavigate();
 
-  //get user information from localStorage
-  // const user = JSON.parse(localStorage.getItem("user"));
-  // get data or object from context auth provider
   const [value, setValue] = useState();
-  //  const theme = useTheme();
-  console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  // console.log(isMatch);
-  const routes = [
-    "/Home",
-    "/About Us",
-    "/What We Do",
-    "/Media",
-    "/Contact",
-  ];
+  const routes = ["/Home", "/About Us", "/What We Do", "/Media", "/Contact"];
   return (
     <Box>
       <CssBaseline />
       <Box>
         <AppBar
           position="static"
-          sx={{ backgroundColor: "#EFF7F2",  paddingX: { md: "80px", sm: "30px", xs: "20px" },boxShadow:"none" }}
+          sx={{
+            backgroundColor: "#EFF7F2",
+            paddingX: { md: "80px", sm: "30px", xs: "20px" },
+            boxShadow: "none",
+          }}
         >
-          <Toolbar className="toolbarArea" sx={{paddingLeft:"0px", paddingRight:"0px"}}>
+          <Toolbar
+            className="toolbarArea"
+            sx={{ paddingLeft: "0px", paddingRight: "0px" }}
+          >
             <Box sx={{ display: "flex", alignItems: "right" }}>
               <Box
                 onClick={() => {
                   navigate("/");
                 }}
-                // className="headerLogoArea"
               >
-                <Typography sx={{color: "#000", fontSize:"22px",fontWeight:"bold"}} variant="h1" component="h2">
-                   {`{`}Finsweet
+                <Typography
+                  sx={{ color: "#000", fontSize: "22px", fontWeight: "bold" }}
+                  variant="h1"
+                  component="h2"
+                >
+                  {`{`}Finsweet
                 </Typography>
-              
               </Box>
             </Box>
             <Box
@@ -95,7 +86,6 @@ const Header = () => {
                 <>
                   <Tabs
                     sx={{ marginLeft: "auto", color: "#525560" }}
-                    // to={routes[0]}
                     className="list-navArea"
                     indicatorColor="secondary"
                     // textColor="inherit"
@@ -105,7 +95,6 @@ const Header = () => {
                     <Tab
                       className="list-nav list-nav-active"
                       label="Home"
-                      // label="Home"
                       value={routes[0]}
                       component={Link}
                       to={routes[0]}
@@ -114,14 +103,12 @@ const Header = () => {
                     <Tab
                       className="list-nav"
                       label="About us"
-                      // label="Profile"
                       value={routes[1]}
                       component={Link}
                       to={routes[1]}
                     />
                     <Tab
                       className="list-nav"
-                      // label="Product List"
                       label="What We Do"
                       value={routes[2]}
                       component={Link}
@@ -130,7 +117,6 @@ const Header = () => {
                     <Tab
                       className="list-nav"
                       label="Media"
-                      // label="Organogram"
                       value={routes[3]}
                       component={Link}
                       to={routes[3]}
@@ -138,7 +124,6 @@ const Header = () => {
                     <Tab
                       className="list-nav"
                       label="Contact"
-                      // label="Organogram"
                       value={routes[4]}
                       component={Link}
                       to={routes[4]}
@@ -148,26 +133,18 @@ const Header = () => {
               )}
             </Toolbar>
 
-            {/* <AppBar position="static" sx={{ background: "#063970" }}>
-          
-            </AppBar> */}
-
             {/*  ====== nicer gula delete hobe nah so carefull =========== */}
 
             <Button
               variant="contained"
-              // color="primary"
               size="small"
               sx={{
                 fontSize: "16px",
                 fontWeight: "500",
-                // marginLeft: "15px",
-                textTransform:"capitalize",
+                textTransform: "capitalize",
                 backgroundColor: "#000",
                 color: "#fff",
-                padding:"5px 32px",
-                // width:"51px",
-                // height:"19px"
+                padding: "5px 32px",
               }}
             >
               Donate
@@ -177,7 +154,6 @@ const Header = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      {/* <Navbar></Navbar> */}
     </Box>
   );
 };

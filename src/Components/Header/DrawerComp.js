@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../../assets/logo/ghorami_tracker_icon.png";
 import {
   Box,
   Button,
@@ -8,7 +7,6 @@ import {
   List,
   ListItemButton,
   ListItemIcon,
-  ListItemText,
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -22,8 +20,7 @@ import {
 } from "react-icons/md";
 import { AiOutlineSolution } from "react-icons/ai";
 
-import { Link, Navigate, NavLink, useLocation } from 'react-router-dom';
-const pages = ["Features", "Solutions", "Pricing", "Book a Demu", "Login", "Download"];
+import {  NavLink, useLocation } from 'react-router-dom';
 const pages1 = [
   { label: "Home", path: "/home", icon: <MdOutlineFeaturedPlayList /> },
   { label: "About Us", path: "/about_us", icon: <AiOutlineSolution /> },
@@ -35,10 +32,6 @@ const pages1 = [
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
    const location = useLocation();
-  // const routes = ["/features", "/solutions", "/pricing", "/book_a_demo"];
-  console.log(location)
-  console.log(location.pathname)
-  console.log(typeof location.pathname)
   return (
     <React.Fragment>
       <Drawer
@@ -63,37 +56,7 @@ const DrawerComp = () => {
               component="h2"
             >
               {`{`}Finsweet
-            </Typography>
-            {/* <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box
-                component="img"
-                sx={{
-                  height: "auto",
-                  width: "40px",
-                  padding: "7px",
-                }}
-                alt="The house from the offer."
-                src={Logo}
-              />
-              <Typography
-                variant="h6"
-                noWrap
-                component="div"
-                sx={{
-                  color: "#1BB096",
-                  fontWeight: "bold",
-                  fontSize: "1rem",
-
-                  textTransform: "uppercase",
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  Navigate("/");
-                }}
-              >
-                Ghorami
-              </Typography>
-            </Box> */}
+            </Typography>    
             <CancelIcon
               onClick={() => setOpenDrawer(!openDrawer)}
               style={{ color: "white", marginRight: "10px" }}
@@ -142,15 +105,9 @@ const DrawerComp = () => {
                 ) : (
                   <Button
                     style={{
-                      // backgroundColor: "#063970",
-                      // marginTop: "17px",
-                      //   padding: "15px",
-                      // fontWeight: "bold",
-                      // textTransform: "upp",
                       letterSpacing: "1px",
                       color: "black",
                     }}
-                    // variant="contained"
                     size="small"
                     onClick={() => setOpenDrawer(!openDrawer)}
                   >
@@ -160,9 +117,6 @@ const DrawerComp = () => {
                       {page.icon}
                     </ListItemIcon>
                     {page.label}
-                    {/* <ArrowForwardIosIcon
-                      sx={{ fontSize: "15px", marginLeft: "10px" }}
-                    /> */}
                   </Button>
                 )}
               </NavLink>
@@ -171,10 +125,10 @@ const DrawerComp = () => {
         </List>
       </Drawer>
       <IconButton
-        sx={{ color: "#000", backgroundColor: "blue", marginLeft: "auto" }}
+        sx={{ color: "#000", backgroundColor: "#70C174", marginLeft: "auto" }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <MenuIcon style={{ color: "white" }} />
+        <MenuIcon style={{ color: "#000" }} />
       </IconButton>
     </React.Fragment>
   );
