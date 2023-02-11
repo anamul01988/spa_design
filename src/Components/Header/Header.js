@@ -13,11 +13,14 @@ import { Tab, Tabs } from "@mui/material";
 import DrawerComp from "./DrawerComp";
 import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
-import Logo from "../../assets/logo/ghorami_tracker_icon.png";
 
 import "./Header.css";
 const drawerWidth = 240;
-
+const toolbarArea1 ={
+  paddingLeft: "0px",
+  paddingRight: "0px",
+  
+}
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
@@ -42,7 +45,7 @@ const Header = () => {
 
   const [value, setValue] = useState();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const routes = ["/Home", "/About Us", "/What We Do", "/Media", "/Contact"];
+  const routes = ["/", "/about_us", "/what_we_do", "/media", "/contact"];
   return (
     <Box>
       <CssBaseline />
@@ -56,8 +59,9 @@ const Header = () => {
           }}
         >
           <Toolbar
-            className="toolbarArea"
-            sx={{ paddingLeft: "0px", paddingRight: "0px" }}
+            // className="toolbarArea"
+            style={toolbarArea1}
+            // sx={{ paddingX: "0px" }}
           >
             <Box sx={{ display: "flex", alignItems: "right" }}>
               <Box

@@ -6,10 +6,26 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import './css/Earth.css'
+// import './css/Earth.css';
+import { makeStyles} from '@mui/styles';
+
+const useStyles = makeStyles({
+tabs: {
+
+"& .MuiTabs-indicator": {
+  // backgroundColor: "orange",
+  // height: 3,
+  // textTransform: 'capitalize',
+},
+"& .MuiTab-root.Mui-selected": {
+  color: '#000'
+}
+}
+})
+const tabStyle = {textTransform:"capitalize",fontSize:"16px"}
 const Earth = () => {
   const [value, setValue] = React.useState("1");
-
+  const classes = useStyles();
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -72,6 +88,8 @@ const Earth = () => {
                   <TabList
                     sx={{ fontSize: "16px", textTransform: "capitalize" }}
                     onChange={handleChange}
+                    indicatorColor="dark"
+                    className={classes.tabs}
                     aria-label="lab API tabs example"
                     TabIndicatorProps={{
                       style: {
@@ -79,9 +97,9 @@ const Earth = () => {
                       },
                     }}
                   >
-                    <Tab label="Overview" value="1" />
-                    <Tab label="Impact" value="2" />
-                    <Tab label="What You get" value="3" />
+                    <Tab sx={tabStyle} label="Overview" value="1" />
+                    <Tab sx={tabStyle}label="Impact" value="2" />
+                    <Tab sx={tabStyle}label="What You get" value="3" />
                   </TabList>
                 </Box>
                 <TabPanel sx={{ padding: "20px 0px 0px 0px" }} value="1">

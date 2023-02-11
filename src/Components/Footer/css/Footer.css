@@ -1,40 +1,4 @@
-.css-rvv586-MuiImageList-root {
-  display: grid;
-  overflow-y: hidden;
-  list-style: none;
-  padding: 0;
-  -webkit-overflow-scrolling: touch;
-}
-.all-photos.MuiBox-root.css-0 {
-  position: relative;
-  width: 100%;
-}
-img.all-photos-img {
-  height: auto;
-  width: 100%;
-}
-.all-photos.MuiBox-root.css-0::before {
-  position: absolute;
-  font-family: FontAwesome;
-  content: "\f03e";
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
-  left: 0px;
-  top: 0;
-  font-family: "Font Awesome 5 Free";
-  font-size: 60px;
-  color: #fff;
-  text-align: center;
-  visibility: hidden;
-  transition: 0.5s;
-}
-.all-photos.MuiBox-root.css-0:hover:before {
-  background: rgba(0, 0, 0, 0.8);
-  visibility: visible;
-  font-size: 40px;
-  transition: 0.5s;
-}
+
 /*  */
 .newsletter-form {
   /* background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%); */
