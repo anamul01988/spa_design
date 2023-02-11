@@ -6,6 +6,7 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import './css/Earth.css'
 const Earth = () => {
   const [value, setValue] = React.useState("1");
 
@@ -58,14 +59,14 @@ const Earth = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Box
-              sx={{ width: "100%", typography: "body1", paddingLeft: "40px" }}
+              sx={{ width: "100%", typography: "body1", paddingLeft: {lg: "40px",md:  "40px",sm:"0px",xs:"0px"} }}
             >
               <TabContext value={value}>
                 <Box
                   sx={{
                     borderBottom: 1,
                     borderColor: "divider",
-                    width: { lg: "60%", md: "70%", sm: "100%" },
+                    width: { lg: "70%", md: "70%", sm: "100%" },
                   }}
                 >
                   <TabList

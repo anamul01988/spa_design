@@ -9,12 +9,16 @@
     opacity: .6;
     z-index: -1;
 }
-.enviContent.MuiBox-root.css-0 {
-    width: 631px;
-    height: auto;
-    text-align: center;
+.enviContent {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 25%;
-    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
+    flex-direction: column;
+}
+.enviContent h3 {
+    text-align: center;
 }

@@ -67,25 +67,10 @@ const Header = () => {
       <Box>
         <AppBar
           position="static"
-          sx={{ backgroundColor: "#EFF7F2", paddingX: "50px",boxShadow:"none" }}
+          sx={{ backgroundColor: "#EFF7F2",  paddingX: { md: "80px", sm: "30px", xs: "20px" },boxShadow:"none" }}
         >
-          <Toolbar>
+          <Toolbar className="toolbarArea" sx={{paddingLeft:"0px", paddingRight:"0px"}}>
             <Box sx={{ display: "flex", alignItems: "right" }}>
-              {/* <Box
-                component="img"
-                //  style={{ position: "absolute", bottom: "0",zIndex:"-1", opacity:".3" }}
-                sx={{
-                  height: "auto",
-                  width: "80px",
-                  padding: "7px",
-                  // marginTop: "-68px",
-                  //   maxHeight: { xs: 233, md: "650px" },
-                  //   maxWidth: { xs: 350, md: "960px" },
-                }}
-                // className={classes.root}
-                alt="The house from the offer."
-                src={Logo}
-              /> */}
               <Box
                 onClick={() => {
                   navigate("/");

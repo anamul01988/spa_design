@@ -25,17 +25,17 @@ import { AiOutlineSolution } from "react-icons/ai";
 import { Link, Navigate, NavLink, useLocation } from 'react-router-dom';
 const pages = ["Features", "Solutions", "Pricing", "Book a Demu", "Login", "Download"];
 const pages1 = [
-  { label: "Features", path: "/features", icon: <MdOutlineFeaturedPlayList /> },
-  { label: "Solutions", path: "/solutions", icon: <AiOutlineSolution /> },
-  { label: "Pricing", path: "/pricing", icon: <MdOutlinePriceChange /> },
-  { label: "Book a Demo", path: "/book_a_demo", icon: <TbBrandBooking /> },
-  { label: "Login", path: "/login", icon: <BiLogIn /> },
-  { label: "Download", path: "/download", icon: <HiHome /> },
+  { label: "Home", path: "/home", icon: <MdOutlineFeaturedPlayList /> },
+  { label: "About Us", path: "/about_us", icon: <AiOutlineSolution /> },
+  { label: "What We Do", path: "/what_we_do", icon: <MdOutlinePriceChange /> },
+  { label: "Media", path: "/media", icon: <TbBrandBooking /> },
+  { label: "Contact", path: "/contact", icon: <BiLogIn /> },
+  { label: "Donate", path: "/donate", icon: <HiHome /> },
 ];
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
    const location = useLocation();
-  const routes = ["/features", "/solutions", "/pricing", "/book_a_demo"];
+  // const routes = ["/features", "/solutions", "/pricing", "/book_a_demo"];
   console.log(location)
   console.log(location.pathname)
   console.log(typeof location.pathname)
@@ -57,19 +57,21 @@ const DrawerComp = () => {
               alignItems: "center",
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+             <Typography
+              sx={{ color: "#fff", fontSize: "22px", fontWeight: "bold", marginLeft:"15px" }}
+              variant="h1"
+              component="h2"
+            >
+              {`{`}Finsweet
+            </Typography>
+            {/* <Box sx={{ display: "flex", alignItems: "center" }}>
               <Box
                 component="img"
-                //  style={{ position: "absolute", bottom: "0",zIndex:"-1", opacity:".3" }}
                 sx={{
                   height: "auto",
                   width: "40px",
                   padding: "7px",
-                  // marginTop: "-68px",
-                  //   maxHeight: { xs: 233, md: "650px" },
-                  //   maxWidth: { xs: 350, md: "960px" },
                 }}
-                // className={classes.root}
                 alt="The house from the offer."
                 src={Logo}
               />
@@ -78,7 +80,6 @@ const DrawerComp = () => {
                 noWrap
                 component="div"
                 sx={{
-                  // display: { xs: "none", sm: "block" },
                   color: "#1BB096",
                   fontWeight: "bold",
                   fontSize: "1rem",
@@ -92,7 +93,7 @@ const DrawerComp = () => {
               >
                 Ghorami
               </Typography>
-            </Box>
+            </Box> */}
             <CancelIcon
               onClick={() => setOpenDrawer(!openDrawer)}
               style={{ color: "white", marginRight: "10px" }}
@@ -117,7 +118,7 @@ const DrawerComp = () => {
                 to={`${page.path}`}
                 style={{ textDecoration: "none" }}
               >
-                {page.label === "Download" ? (
+                {page.label === "Donate" ? (
                   <Button
                     style={{
                       backgroundColor: "#063970",

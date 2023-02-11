@@ -2,24 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Avatar, Box, Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
-import Container from "@mui/material/Container";
-import { ImHome } from "react-icons/im";
-import ghoramiLogo from "../../assets/footer/ghorami_logo.png";
-import { GrFacebookOption } from "react-icons/gr";
-import { FiTwitter } from "react-icons/fi";
-import { FaPinterestP } from "react-icons/fa";
-import { RiWhatsappLine } from "react-icons/ri";
-import { FaViber } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { GoLocation } from "react-icons/go";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { GoPrimitiveDot } from "react-icons/go";
-import Stack from "@mui/material/Stack";
+// import Container from "@mui/material/Container";
+// import { ImHome } from "react-icons/im";
+// import ghoramiLogo from "../../assets/footer/ghorami_logo.png";
+// import { GrFacebookOption } from "react-icons/gr";
+// import { FiTwitter } from "react-icons/fi";
+// import { FaPinterestP } from "react-icons/fa";
+// import { RiWhatsappLine } from "react-icons/ri";
+// import { FaViber } from "react-icons/fa";
+// import { FaLinkedinIn } from "react-icons/fa";
+// import { GoLocation } from "react-icons/go";
+// import { HiOutlineMail } from "react-icons/hi";
+// import { BsFillTelephoneFill } from "react-icons/bs";
+// import { GoPrimitiveDot } from "react-icons/go";
+// import Stack from "@mui/material/Stack";
 
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import { Link } from "react-router-dom";
+// import ImageList from "@mui/material/ImageList";
+// import ImageListItem from "@mui/material/ImageListItem";
+// import { Link } from "react-router-dom";
 import "./css/Footer.css";
 const useStyles = makeStyles({
   root: {
@@ -180,7 +180,7 @@ const Footer = () => {
               </Typography>
             </a>
           </Grid>
-          <Grid item md={4} sm={6} xs={6}>
+          <Grid item md={4} sm={8} xs={8}>
             <div>
               <Typography
                 sx={{

@@ -24,14 +24,18 @@ const Environment = ({ image }) => {
     >
       <Box className="environmentArea" component="div"></Box>
       <Box>
-        <Box className="enviContent">
+        <Box className="enviContent"
+         sx={{width: {lg: "631px", md:"631px",sm:"100%",xs:"100%"},
+         paddingX: { lg: "260px", md: "100px", sm: "50px", xs: "10px" },
+        }}
+         >
           <Typography
             variant="h3"
             component="h3"
             sx={{
               color: "#fff",
               fontWeight: "bold",
-              fontSize: "45px",
+              fontSize: {lg:"45px",md:"35px",sm:"30px",xs:"25px"},
               marginBottom: "24px",
               letterSpacing: "1px",
               textTransform: "inherit",
@@ -45,7 +49,7 @@ const Environment = ({ image }) => {
             <Button
               style={{
                 backgroundColor: "#70C174",
-                padding: "10px 32px",
+                padding: {lg:"10px 32px",md:"10px 32px",sm:"10px 15px",xs:"10px 15px"},
                 fontSize: "16px",
                 fontWeight: "500",
                 textTransform: "capitalize",
@@ -59,7 +63,7 @@ const Environment = ({ image }) => {
               style={{
                 backgroundColor: "#fff",
                 color: "#000",
-                padding: "10px 32px",
+                padding: {lg:"10px 32px",md:"10px 32px",sm:"10px 15px",xs:"10px 15px"},
                 fontSize: "16px",
                 fontWeight: "500",
                 textTransform: "capitalize",
